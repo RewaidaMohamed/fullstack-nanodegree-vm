@@ -14,9 +14,9 @@
                     <div class="center roundedsection myform">
 						<form action="{{url_for('addNewBook' , library_id = library.id)}}" method="post">
 							<p>Title:</p>
-								<input type="text" name="title">
+								<input type="text" name="title" required>
 							<p>Author:</p>
-								<input type="text" name="author">
+								<input type="text" name="author" required>
 							<p>Description:</p>
 								<input type="text" name="description">
 							<p>Genre</p>

@@ -14,9 +14,9 @@
                     <div class="center roundedsection myform">
 						<form action="{{url_for('editBook', library_id = book.library_id , book_id = book.id) }}" method="post">
 							<p>Name:</p>
-								<input type="text" name="title" value="{{book.title}}">
+								<input type="text" name="title" value="{{book.title}}" required>
 							<p>Author:</p>
-								<input type="text" name="author" value="{{book.author}}">
+								<input type="text" name="author" value="{{book.author}}" required>
 							<p>Genre:</p>
 							<select name="genre">
 							{% for g in genres %}
